@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="script.js"></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <h1>SPLI<br>TTER</h1>
+
+  <main class="app-container">
+
+    <section class="bill-settings">
+
+      <section class="bill-amount-container">
+        <h2>Bill</h2>
+        <input
+          type="number"
+          class="number-input bill"
+          name="bill-amount"
+          placeholder="0"
+        >
+      </section>
+
+      <section>
+        <h2>Select Tip %</h2>
+        <div class="tip-buttons-container">
+
+          <button class="tip-button" data-tip="5">5%</button>
+          <button class="tip-button" data-tip="10">10%</button>
+          <button class="tip-button" data-tip="15">15%</button>
+          <button class="tip-button" data-tip="25">25%</button>
+          <button class="tip-button" data-tip="50">50%</button>
+          <input 
+            type="number" 
+            class="tip-button custom"
+            name="custom-tip"
+            placeholder="Custom"
+          >
+          
+        </div>
+        
+      </section>
+
+      <section class="people-amount-container">
+
+        <div class="people-amount-title-container">
+          <h2>Number of People</h2>
+          <p class="people-amount-message">Can't be zero</p>
+        </div>
+        <input 
+          type="number" 
+          class="number-input people"
+          name="people-amount" 
+          placeholder="0"
+        >
+        
+      </section>
+      
+    </section>
+
+    <section class="total-information-container">
+
+      <div>
+
+        <section class="tip-amount-container">
+
+          <div class="tip-amount-text-container">
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+  
+          <p class="total-amount tip">$0.00</p>
+          
+        </section>
+  
+        <section class="tip-amount-container">
+  
+          <div class="tip-amount-text-container">
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+  
+          <p class="total-amount person">$0.00</p>
+          
+        </section>
+        
+      </div>
+
+      <button class="reset-button available">RESET</button>
+      
+    </section>
+    
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/tip-calculator-app-cmUamxnfT-" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mark Vanweersch</a>.
+  </footer>
+
+</body>
+</html>
